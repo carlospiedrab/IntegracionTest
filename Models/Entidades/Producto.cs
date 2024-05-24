@@ -16,5 +16,7 @@ namespace Models.Entidades
         public string Marca { get; set; }
 
         public double Precio { get; set; }
+
+        public double Costo { get; set; }
     }
 }
