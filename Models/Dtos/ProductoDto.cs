@@ -16,5 +16,6 @@ namespace Models.Dtos
         public double Precio { get; set; }
 
         public double Costo { get; set; }
+        public double Promocion { get; set; }
     }
 }
