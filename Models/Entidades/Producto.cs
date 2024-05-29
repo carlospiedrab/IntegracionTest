@@ -20,5 +20,6 @@ namespace Models.Entidades
         public double Costo { get; set; }
 
         public double Promocion { get; set; } = 0;
+        public bool Estado { get; set; }
     }
 }
