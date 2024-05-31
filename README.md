@@ -1,8 +1,11 @@
 # Aplicacion .Net Web API
 
-### Instalacion
+### Construir la Aplicacion
 
 dotnet build
+
+### Ejecutar Scripts de SQL
+Ejecutar los scripts del directorio Scripts en orden de fecha
 
 ### Ejecutar App
 
