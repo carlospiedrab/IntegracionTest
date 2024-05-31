@@ -1,6 +1,6 @@
 
 
-
+// Tabla Categoria
  Create table Categoria (
    CategoriaId int not null IDENTITY,
    Nombre  nvarchar(120) not null
@@ -9,6 +9,7 @@
   Alter table Categoria
   Add Constraint Pk_Categoria PRIMARY KEY (CategoriaId);
 
+// Tabla Marca
  Create table Marca (
    MarcaId int not null IDENTITY,
    Nombre  nvarchar(120) not null
@@ -17,6 +18,7 @@
   Alter table Marca
   Add Constraint Pk_Marca PRIMARY KEY (MarcaId);
 
+// Tabla Producto
   Create table Producto (
     ProductoId int not null IDENTITY,
 	NombreProducto nvarchar(120) not null,
