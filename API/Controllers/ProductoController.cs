@@ -37,7 +37,7 @@ namespace API.Controllers
         //     ).ToList();
         // }
 
-        [HttpGet]
+        [HttpGet]  // Get All Produtcs
         public async Task<ActionResult<List<ProductoDto>>> GetProductos()
         {
             List<ProductoDto> lista = await _context.Productos
@@ -55,7 +55,7 @@ namespace API.Controllers
             return Ok(lista);
 
         }
-        [HttpGet("{id}")]
+        [HttpGet("{id}")]  // Get a Single Product
         public async Task<ActionResult<ProductoDto>> GetProducto(int id)
         {
             Producto producto = await _context.Productos
@@ -76,7 +76,7 @@ namespace API.Controllers
             });
         }
 
-        [HttpPost]
+        [HttpPost]  // Create a new Product
         public async Task<ActionResult<Producto>> PostInvoice(Producto producto)
         {
             try
@@ -93,7 +93,7 @@ namespace API.Controllers
             }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{id}")]  // Update a Product
         public async Task<IActionResult> PutProducto(int id, Producto producto)
         {
             if (id != producto.Id)
@@ -115,7 +115,7 @@ namespace API.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}")]  // Delete a Product
         public async Task<IActionResult> DeleteProducto(int id)
         {
             Producto producto = await _context.Productos.FindAsync(id);
